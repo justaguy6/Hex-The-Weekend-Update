@@ -54,7 +54,7 @@ jobs:
           haxelib install hscript  
           haxelib install actuate
           haxelib install newgrounds 1.3.0
-          haxelib install hxvm-luajit https://github.com/Sirox228/hxvm-luajit
+          haxelib git install hxvm-luajit https://github.com/Sirox228/hxvm-luajit
           haxelib git linc_luajit https://github.com/Sirox228/linc_luajit.git
           haxelib git extension-webm https://github.com/Sirox228/extension-webm --quiet
 
