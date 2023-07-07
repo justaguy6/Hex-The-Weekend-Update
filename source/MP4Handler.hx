@@ -1,5 +1,5 @@
 package;
-
+#if windows 
 import flixel.graphics.FlxGraphic;
 import flixel.FlxG;
 import flixel.FlxSprite;
@@ -193,3 +193,4 @@ class MP4Handler
 			bitmap.volume = 0;
 	}
 }
+#end
