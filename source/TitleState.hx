@@ -109,14 +109,13 @@ class TitleState extends MusicBeatState
 		switchState(new ChartingState());
 		clean();
 		#else
-		#if !cpp
+		
 		new FlxTimer().start(1, function(tmr:FlxTimer)
 		{
 			startIntro();
 		});
-		#else
+		
 		startIntro();
-		#end
 		#end
 	}
 
