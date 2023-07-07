@@ -1,7 +1,7 @@
 import flixel.FlxG;
 import flixel.group.FlxGroup.FlxTypedGroup;
 import flixel.FlxSprite;
-import sys.FileSystem;
+import openfl.utils.Assets;
 import haxe.Json;
 
 using StringTools;
@@ -46,7 +46,7 @@ class HexMenuData
 		{
 			path = dataPath;
 			Debug.logTrace("loading " + path);
-			var jsonShit = sys.io.File.getContent(FileSystem.absolutePath(dataPath));
+			var jsonShit = Assets.getText(dataPath)
 			var jsonData = Json.parse(jsonShit);
 			data = cast jsonData;
 		}
