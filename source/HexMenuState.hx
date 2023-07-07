@@ -46,7 +46,7 @@ class HexMenuData
 		{
 			path = dataPath;
 			Debug.logTrace("loading " + path);
-			var jsonShit = Assets.getText(dataPath)
+			var jsonShit = Assets.getText(dataPath);
 			var jsonData = Json.parse(jsonShit);
 			data = cast jsonData;
 		}
